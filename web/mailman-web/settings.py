@@ -22,7 +22,7 @@ For more information on this file, see
 https://docs.djangoproject.com/en/1.8/topics/settings/
 
 For the full list of settings and their values, see
-https://docs.djangoproject.com/en/1.8/ref/settings/
+https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -46,7 +46,7 @@ ADMINS = (
 SITE_ID = 1
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
-# See https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts
+# See https://docs.djangoproject.com/en/4.1/ref/settings/#allowed-hosts
 ALLOWED_HOSTS = [
     "localhost",  # Archiving API from Mailman, keep it.
     # "lists.your-domain.org",
@@ -143,7 +143,7 @@ WSGI_APPLICATION = 'wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/1.8/ref/settings/#databases
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 # dj_database_url uses $DATABASE_URL environment variable to create a
 # django-style-config-dict.
 # https://github.com/kennethreitz/dj-database-url
@@ -152,12 +152,12 @@ DATABASES = {
 }
 
 # If you're behind a proxy, use the X-Forwarded-Host header
-# See https://docs.djangoproject.com/en/1.8/ref/settings/#use-x-forwarded-host
+# See https://docs.djangoproject.com/en/4.1/ref/settings/#use-x-forwarded-host
 USE_X_FORWARDED_HOST = True
 
 
 # Password validation
-# https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
+# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
